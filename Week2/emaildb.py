@@ -1,5 +1,5 @@
 import sqlite3
-#creates sql databse file called emaildb.sqlite
+#creates sql databse file called emaildb.sql
 conn = sqlite3.connect('emaildb.sqlite')
 cur = conn.cursor()
 
