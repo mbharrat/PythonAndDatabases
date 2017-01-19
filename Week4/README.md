@@ -8,4 +8,5 @@ Assignment included:
 
 COMMAND TO RUN:
 	Python roster.py
+
 		Enter file name : roster_data.json
