@@ -7,6 +7,7 @@ Assignment included:
 	*data from XML is parsed in mytracks.py (all data INCLUDING Genre) and inputted into appropriate tables in generated sqlite file
 
 COMMANDS TO RUN:
+
 	For given file:
 		Python tracks.py
 
