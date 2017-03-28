@@ -1,4 +1,4 @@
-#Week 2: Basic Structured Query Language
+# Week 5: Databases and Visualization
 
 Assignment included:
 	

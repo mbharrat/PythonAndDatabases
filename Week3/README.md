@@ -1,4 +1,4 @@
-#Week 3: Data Models and Relational SQL
+# Week 3: Data Models and Relational SQL
 
 Assignment included:
 

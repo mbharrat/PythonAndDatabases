@@ -1,4 +1,4 @@
-#Week 2: Basic Structured Query Language
+# Week 2: Basic Structured Query Language
 
 Assignment included:
 	
