@@ -1,21 +1,23 @@
-# GeoData Example
+# Week 5: Databases and Visualization
 
 Assignment included:
 	
-	*a file called mbox.txt that was a text file containing thousands of lines of text of email conversations
-	*text is parsed in emaildb.py and emails and count is extracted from txt file and inputted into table in created emaildb.sqlite file
-	*text is parsed in myemaildb.py and org name (part after @ in email address) is extracted along with count and inputted into table in created myemaildb.sqlite file
+	*multiple files to generate webpage
+	*a file called geoload.py that takes the data in where.data and creates a file called geodata.sqlite and populates those location into that database
+	*once geoload.py is ended another file called geodump.py reads geodata.sqlite and creates a print on the terminal as well as prints a json javascript file (where.js) to be used by the html
+	*once that file has finished running, the html link called where.html is active and markers can be seen
 
 COMMAND TO RUN:
 
 	For given file:
-		Python emaildb.py
+		Python geoload.py
 	
-			Enter file name: mbox.txt
-	
-	For my file:
-		Python myemaildb.py
+			Data is being download: to end control+c
 
-			Enter file name : mbox.txt
+		Python geodump.py
+
+			Runs until ends
+
+		Open where.html in broswer
 	 
 
