@@ -1,44 +1,46 @@
-# Pagerank Example
+# GMane Example
 
 Assignment included:
 	
 	*multiple files to generate webpage with d3.js
-	*a file called spider.py which is basically a web crawler
-	*after spider runs a file called spider.sqlite is created with all the pages in it
-	*two maintence programs exist: sprank.py and spreset.py
-		*sprank.py calculated page rank of the pages...the more iterations that run, the more normalized your data will be
-		*spreset.py resets all the page ranks to 1
-	*once sprank.py runs and completes, you can either use spdump.py to dump data to terminal
-	*or you can use spjson.py which takes data in database and creates a json formatted js file called force.js
-	*once force.js is generated, force.html can use that file to create webpage
+	*a file called gmane.py which is basically a web crawler which can crawl on gmane.org (using local copy on chucks website to avoid crashing)
+		*this site has GIGS of emails
+	*gmane.py creates content.sqlite which is just raw data
+	*gmodel.py runs and uses mapping.sqlite to create index.sqlite
+	*you have three options now
+	*run gbasic.py to debug with histogram and dump to terminal
+	*run gline.py / gyear.py which generates gline.js and gline.htm uses that in conjunction with d3.js to display a line graph
+	*run gword.py which generates gword.js and gword.htm uses that in conjuction with d3.js to display some cool word art
 
 COMMAND TO RUN:
 
 	For given file:
-		Python spider.py
+		Python gmane.py
 	
-			Enter web url or enter:
+			How many messages:
 
-				if enter is clicked then chucks homepage is ran
+				Enter as many as you want to retrieve and content.sqlite generated
 
-			How many pages: (enter as many as wanted)
-				
-				keeps prompting until command+c
+		Python gmodel.py
 
-		Python sprank.py
+			runs mapping process and creates index.sqlite
 
-			How many iterations:
+		Python gbasic.py
 
-				the more the more normalized data will be
+			How many to dump?
 
-		Python spdump.py
+				Enter how many to print to screen for debugging
 
-			prints data to screen
+		Python gline.py
 
-		Python spjson.py
+			populates gline.js
 
-			How many nodes:
+				open gline.htm
+		
+		Python gword.py
 
-		Open force.html in browswer
+			populates gword.js
+
+				open gword.js
 	 
 
